@@ -12,7 +12,7 @@ int main()
 
         // print the value of the variable
 
-    } // this is the end of the body of the while loop, it keeps looping back to the while statement, while the condition is true
+    } //this is the end of the body of the while loop, it keeps looping back to the while statement, while the condition is true
 
     // you can put breakpoints on the closing curly brace of the while loop to see how it loops back to the while statement and checks the condition again
     // you can also put breakpoints on the increment statement to see how the variable changes each time through the loop
