@@ -1,104 +1,103 @@
-# Laboratory_1
-Repo for first Lab
+# Laboratory_2
+Repo for second Lab
 
 Tasks:
 
-->Create a GitHub account OK
+->Import this repo OK
 
-->Import nemmarton/Laboratory_1 repo OK
+->Use math.h, solve the distance task
 
-->Open Codespace OK?
+->Solve the parabolic eq. task
 
-->Compile and run the main.c
+->Create a simple loop, check debug options
 
-->Introduce yourself to terminal commands and redirection
+->Modify the loop, get the difference between while and for loops
 
-->Solve painting task
+->Solve the last task
 
-->Solve /n %d task
 
 Hint:
+##Math functions##
+math.h includes a lot of **functions** that can be useful, such like sin(), cos(), pow(), sqrt(). We do not know much about functions, but we have used one-or-two before:
 
-# Understanding `printf()` in C
+->printf() is a function, it receives a text (called string), and other parameters if needed (e.g. the number we want to print)
+->scanf() also a function
+->math functions are usually waiting for numbers, and they return with a result; e.g. sqrt(4) will result in 2, because square root of 4 is 2 so:
 
-The `printf()` function is used in C to display text and values on the screen.  
-It comes from the C standard library `<stdio.h>`, so you must include it at the beginning of your program:
+int a;
 
+a=sqrt(4); //a value is assigned by the **result** of the called function sqrt() with parameter 4
+
+It may seem overexplained, but that kind of understanding will help you later!
+
+Another useful function for now is pow(), it required two parameters, pow(x,y) will return with the value x raised to the power of y (x^y)!
+Of course with integer powers it can be done by multiplication, but it can be used for real valued powers as well!
+
+
+
+Loops allow us to execute a block of code multiple times without writing it repeatedly.
+
+---
+
+## LOOPS
+
+The `while` loop repeats a block **as long as a condition is true**.
+
+**Syntax:**
 ```c
-#include <stdio.h>
+while (condition) {
+    // code to execute
+}
 
-1. Basic usage
+    The condition is checked before each iteration.
 
-printf("Hello, World!\n");
-
-Output:
-
-Hello, World!
-
-    The \n means new line.
-
-2. Format specifiers
-
-Format specifiers are placeholders inside the string that tell printf() what kind of data to print.
-Specifier	Meaning	Example
-%d	Integer (whole number)	20
-%f	Floating-point number	1.850000
-%c	Single character	A
-%s	String (text)	Hello
+    If the condition is false at the start, the loop body may not run at all!
 
 Example:
 
-int age = 20;
-float height = 1.85;
-char grade = 'A';
+int i = 0;
+while (i < 5) {
+    printf("i = %d\n", i);
+    i++;
+}
 
-printf("Age: %d, Height: %f, Grade: %c\n", age, height, grade);
+2. The for loop
 
-Output:
+The for loop is often used when we know exactly how many times we want to repeat something.
+It has three parts: initialization, condition, and update.
 
-Age: 20, Height: 1.850000, Grade: A
+Syntax:
 
-3. Controlling the output
+for (initialization; condition; update) {// any of them can be empty, but semicolon; is needed!
+    // code to execute
+}
 
-You can control how many decimal places to show with floats:
+    Initialization happens once at the beginning.
 
-printf("Height: %.2f\n", height);
+    The condition is checked before each iteration.
 
-Output:
+    The update happens after every iteration.
 
-Height: 1.85
-
-You can also print multiple values at once:
-
-printf("%d + %d = %d\n", 5, 3, 5+3);
-
-Output:
-
-5 + 3 = 8
-
-4. Escape sequences
-
-Escape sequences let you format text in special ways:
-Sequence	Meaning
-\n	New line
-\t	Tab space
-\\	Backslash (\)
-\"	Double quote (")
+So what happens: Init->condition->body->update->condition->body->update->condition->body->update->condition untill condition is once fail!
 
 Example:
 
-printf("Hello\tWorld\n");
+for (int i = 0; i < 5; i++) {
+    printf("i = %d\n", i);
+}
 
-Output:
 
-Hello   World
 
-5. Common mistakes
+3. Infinite loops
 
-    ❌ Forgetting to include <stdio.h> → compiler error.
+Both while and for can create infinite loops if the condition never becomes false.
 
-    ❌ Mismatch between format specifier and variable type:
+while (1) {
+    // runs forever
+}
 
-        Using %d for a float or %f for an int gives wrong results.
+for (;;) {
+    // runs forever
+}
+while is mostly used for this purpose!
 
-    ❌ Forgetting \n → output stays on the same line.
