@@ -16,8 +16,8 @@ Tasks:
 ->Solve the last task
 
 
-Hint:
-##Math functions##
+
+##Math functions
 math.h includes a lot of **functions** that can be useful, such like sin(), cos(), pow(), sqrt(). We do not know much about functions, but we have used one-or-two before:
 
 ->printf() is a function, it receives a text (called string), and other parameters if needed (e.g. the number we want to print)
