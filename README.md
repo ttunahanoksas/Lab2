@@ -73,11 +73,11 @@ for (initialization; condition; update) {// any of them can be empty, but semico
     // code to execute
 }
 ```
-    >Initialization happens once at the beginning.
+>Initialization happens once at the beginning.
 
-    >The condition is checked before each iteration.
+>The condition is checked before each iteration.
 
-    >The update happens after every iteration.
+>The update happens after every iteration.
 
 So what happens: Init->condition->body->update->condition->body->update->condition->body->update->condition untill condition is once fail!
 
