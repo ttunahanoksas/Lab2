@@ -48,30 +48,30 @@ The `while` loop repeats a block **as long as a condition is true**.
 while (condition) {
     // code to execute
 }
-
+```
     The condition is checked before each iteration.
 
     If the condition is false at the start, the loop body may not run at all!
 
 Example:
-
+```c
 int i = 0;
 while (i < 5) {
     printf("i = %d\n", i);
     i++;
 }
-
+```
 2. The for loop
 
 The for loop is often used when we know exactly how many times we want to repeat something.
 It has three parts: initialization, condition, and update.
 
 Syntax:
-
+```c
 for (initialization; condition; update) {// any of them can be empty, but semicolon; is needed!
     // code to execute
 }
-
+```
     Initialization happens once at the beginning.
 
     The condition is checked before each iteration.
@@ -81,17 +81,17 @@ for (initialization; condition; update) {// any of them can be empty, but semico
 So what happens: Init->condition->body->update->condition->body->update->condition->body->update->condition untill condition is once fail!
 
 Example:
-
+```c
 for (int i = 0; i < 5; i++) {
     printf("i = %d\n", i);
 }
 
-
+```
 
 3. Infinite loops
 
 Both while and for can create infinite loops if the condition never becomes false.
-
+```c
 while (1) {
     // runs forever
 }
@@ -99,5 +99,7 @@ while (1) {
 for (;;) {
     // runs forever
 }
-while is mostly used for this purpose!
+
+```
+while is preferably used for this purpose!
 
