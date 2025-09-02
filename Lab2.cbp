@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+    <FileVersion major="1" minor="6" />
+    <Project>
+        <Option title="tasks" />
+        <Option pch_mode="2" />
+
+        <Build>
+            <!-- First task -->
+            <Target title="first_task">
+                <Option output="bin/Debug/first_task.exe" prefix_auto="1" extension_auto="0" />
+                <Option object_output="obj/Debug/first_task/" />
+                <Option type="1" />
+                <Compiler>
+                    <Add option="-Wall" />
+                    <Add option="-Werror" />
+                    <Add option="-g" />
+                </Compiler>
+            </Target>
+
+            <!-- Second task -->
+            <Target title="second_task">
+                <Option output="bin/Debug/second_task.exe" prefix_auto="1" extension_auto="0" />
+                <Option object_output="obj/Debug/second_task/" />
+                <Option type="1" />
+                <Compiler>
+                    <Add option="-Wall" />
+                    <Add option="-Werror" />
+                    <Add option="-g" />
+                </Compiler>
+            </Target>
+
+            <!-- Third task -->
+            <Target title="third_task">
+                <Option output="bin/Debug/third_task.exe" prefix_auto="1" extension_auto="0" />
+                <Option object_output="obj/Debug/third_task/" />
+                <Option type="1" />
+                <Compiler>
+                    <Add option="-Wall" />
+                    <Add option="-Werror" />
+                    <Add option="-g" />
+                </Compiler>
+            </Target>
+
+            <!-- Fourth task -->
+            <Target title="fourth_task">
+                <Option output="bin/Debug/fourth_task.exe" prefix_auto="1" extension_auto="0" />
+                <Option object_output="obj/Debug/fourth_task/" />
+                <Option type="1" />
+                <Compiler>
+                    <Add option="-Wall" />
+                    <Add option="-Werror" />
+                    <Add option="-g" />
+                </Compiler>
+            </Target>
+
+
+        </Build>
+
+        <!-- List all files in project -->
+        <Unit filename="first_task.c" />
+        <Unit filename="second_task.c" />
+        <Unit filename="third_task.c" />
+        <Unit filename="fourth_task.c" />
+
+
+        <Extensions>
+            <code_completion />
+            <debugger />
+        </Extensions>
+    </Project>
+</CodeBlocks_project_file>
