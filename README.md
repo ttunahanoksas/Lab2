@@ -49,6 +49,7 @@ while (condition) {
     // code to execute
 }
 ```
+
     The condition is checked before each iteration.
 
     If the condition is false at the start, the loop body may not run at all!
