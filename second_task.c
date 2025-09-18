@@ -1,15 +1,12 @@
 #include <stdio.h>
-#include ? ? ?
+#include <math.h>
 
 int main()
 {
-    // declare variables<-- These are comments, you can remove them if you want to
+double x1, x2, y1, y2;
+printf("Enter x1 y1 x2 y2: \n");
+scanf("%lf %lf %lf %lf", &x1, &y1, &x2, &y2);
+double distance =sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))
+printf("%f", distance);
 
-    // get user input
-
-    // calculate the length
-
-    // print the result
-
-    return 0;
 }
